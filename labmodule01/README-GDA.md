@@ -9,6 +9,7 @@ Be sure to implement all the PIOT-GDA-* issues (requirements).
 NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
 
 What does your implementation do? 
+Se realizó la instalación de Maven y la ejecución de los tests, que funcionaron sin errores.
 
 How does your implementation work?
 
@@ -16,7 +17,7 @@ How does your implementation work?
 
 NOTE: Be sure to include the branch.
 
-URL: 
+URL: https://github.com/AntonProl/java-components/tree/labmodule01
 
 
 ### Unit Tests Executed
@@ -25,9 +26,7 @@ NOTE: The instructor will execute your unit tests. You only need to list each te
 (e.g. ConfigUtilTest, DataUtilTest, etc). Be sure to include all previous tests, too,
 since you need to ensure you haven't introduced regressions.
 
-- 
-- 
-- 
+- ConfigUtilTest
 
 ### Integration Tests Executed
 
@@ -36,8 +35,6 @@ some exceptions (such as your cloud connectivity tests). In such cases, they'll 
 your code to ensure it's correct. As for the tests you execute, you only need to list each
 test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
 
-- 
-- 
-- 
+- GatewayDeviceAppTest
 
 EOF.

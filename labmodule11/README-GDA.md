@@ -10,13 +10,17 @@ NOTE: Include two full paragraphs describing your implementation approach by ans
 
 What does your implementation do? 
 
+Mi GDA ahora habla con la nube (Ubidots) de forma segura. Le envía datos de los sensores que recoge del CDA y de sí mismo. También, si la nube le manda una orden (como "enciende un LED"), el GDA la recibe y se la pasa al CDA para que la ejecute.
+
 How does your implementation work?
+
+El GDA usa un conector MQTT especial (CloudClientConnector) para conectarse a Ubidots con certificados y claves. Este conector traduce los nombres de los tópicos para que Ubidots los entienda y así poder enviarle datos. Para recibir órdenes de la nube (como la del LED), se suscribe a un tópico específico de Ubidots. Cuando llega una orden, un "oyente" la procesa, la convierte en un ActuatorData, y se la da al DeviceDataManager, quien finalmente la envía al CDA por el MQTT local.
 
 ### Code Repository and Branch
 
 NOTE: Be sure to include the branch.
 
-URL: 
+URL: https://github.com/AntonProl/java-components/tree/labmodule11
 
 
 ### Unit Tests Executed

@@ -55,7 +55,33 @@ test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
 
 ![imagen](https://github.com/user-attachments/assets/557cc750-4023-4a2b-8460-6b8ddc91d6d9)
 
+CONNECT:
+
+![imagen](https://github.com/user-attachments/assets/b0897d0b-5d6b-477f-8e9b-8699fde99534)
 
 
+CONNECT ACK:
+
+![imagen](https://github.com/user-attachments/assets/27f17600-50f7-4818-84df-c19db12bfdf3)
+
+SUBSCRIBE REQUEST:
+
+![imagen](https://github.com/user-attachments/assets/279a64f1-228e-4b22-8439-7c40d40a35e9)
+
+SUBSCRIBE ACK:
+
+![imagen](https://github.com/user-attachments/assets/d0bb5ad0-16ec-4ee4-b524-af6bdc37b168)
+
+UNSUSCRIBE REQUEST:
+
+![imagen](https://github.com/user-attachments/assets/2c803491-faa7-446a-b70e-acd48cdeb287)
+
+UNSUSCRIBE ACK:
+
+![imagen](https://github.com/user-attachments/assets/d269fe33-9533-4366-a29d-6b0a24e7c7ef)
+
+DISCONNECT REQ:
+
+![imagen](https://github.com/user-attachments/assets/8c03fbe8-737f-48ea-b4bb-3d4e7879db52)
 
 EOF.

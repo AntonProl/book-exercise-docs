@@ -53,4 +53,9 @@ test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
 - MqttClientConnectorTest
 - MqttClientControlPacketTest
 
+![imagen](https://github.com/user-attachments/assets/557cc750-4023-4a2b-8460-6b8ddc91d6d9)
+
+
+
+
 EOF.

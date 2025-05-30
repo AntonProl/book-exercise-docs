@@ -43,4 +43,82 @@ test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
 - All part01
 - All part02
 
+
+GDA MQTT Client Performance Test 
+
+testConnectAndDisconnect
+
+may 30, 2025 9:28:31 A. M. programmingtheiot.gda.connection.MqttClientConnector initClientParameters
+INFORMACIÓN: Usando URL para conexión con el broker: tcp://localhost:1883
+may 30, 2025 9:28:31 A. M. programmingtheiot.gda.connection.MqttClientConnector connectClient
+INFORMACIÓN: Cliente MQTT conectándose al broker: tcp://localhost:1883
+may 30, 2025 9:28:31 A. M. programmingtheiot.gda.connection.MqttClientConnector disconnectClient
+INFORMACIÓN: Disconnecting MQTT client from broker: tcp://localhost:1883
+may 30, 2025 9:28:31 A. M. programmingtheiot.gda.connection.MqttClientConnector connectComplete
+INFORMACIÓN: Conexión MQTT exitosa (es reconexión = false). Broker: tcp://localhost:1883
+may 30, 2025 9:28:31 A. M. programmingtheiot.gda.connection.MqttClientConnector subscribeToTopic
+
+
+testPublishQoS0
+
+may 30, 2025 9:35:10 A. M. programmingtheiot.gda.connection.MqttClientConnector initClientParameters
+INFORMACIÓN: Usando URL para conexión con el broker: tcp://localhost:1883
+may 30, 2025 9:35:10 A. M. programmingtheiot.gda.connection.MqttClientConnector connectClient
+INFORMACIÓN: Cliente MQTT conectándose al broker: tcp://localhost:1883
+may 30, 2025 9:35:11 A. M. programmingtheiot.gda.connection.MqttClientConnector connectComplete
+INFORMACIÓN: Conexión MQTT exitosa (es reconexión = false). Broker: tcp://localhost:1883
+may 30, 2025 9:35:11 A. M. programmingtheiot.gda.connection.MqttClientConnector subscribeToTopic
+INFORMACIÓN: Suscrito exitosamente al tópico con oyente: PIOT/ConstrainedDevice/ActuatorResponse
+may 30, 2025 9:35:11 A. M. programmingtheiot.gda.connection.MqttClientConnector subscribeToTopic
+INFORMACIÓN: Suscrito exitosamente al tópico con oyente: PIOT/ConstrainedDevice/SensorMsg
+may 30, 2025 9:35:11 A. M. programmingtheiot.gda.connection.MqttClientConnector subscribeToTopic
+INFORMACIÓN: Suscrito exitosamente al tópico con oyente: PIOT/ConstrainedDevice/SystemPerfMsg
+may 30, 2025 9:35:11 A. M. programmingtheiot.gda.connection.MqttClientConnector disconnectClient
+INFORMACIÓN: Disconnecting MQTT client from broker: tcp://localhost:1883
+may 30, 2025 9:35:11 A. M. programmingtheiot.part03.integration.connection.MqttClientPerformanceTest execTestPublish
+INFORMACIÓN: \n\tTesting Publish: QoS = 0 | msgs = 5000 | payload size = 212 | start = 1.74859046E9 | end = 1.74859046E9 | elapsed = 0.022
+
+
+testPublishQoS1
+
+may 30, 2025 9:35:57 A. M. programmingtheiot.gda.connection.MqttClientConnector initClientParameters
+INFORMACIÓN: Usando URL para conexión con el broker: tcp://localhost:1883
+may 30, 2025 9:35:57 A. M. programmingtheiot.gda.connection.MqttClientConnector connectClient
+INFORMACIÓN: Cliente MQTT conectándose al broker: tcp://localhost:1883
+may 30, 2025 9:35:57 A. M. programmingtheiot.gda.connection.MqttClientConnector connectComplete
+INFORMACIÓN: Conexión MQTT exitosa (es reconexión = false). Broker: tcp://localhost:1883
+may 30, 2025 9:35:57 A. M. programmingtheiot.gda.connection.MqttClientConnector subscribeToTopic
+INFORMACIÓN: Suscrito exitosamente al tópico con oyente: PIOT/ConstrainedDevice/ActuatorResponse
+may 30, 2025 9:35:57 A. M. programmingtheiot.gda.connection.MqttClientConnector subscribeToTopic
+INFORMACIÓN: Suscrito exitosamente al tópico con oyente: PIOT/ConstrainedDevice/SensorMsg
+may 30, 2025 9:35:57 A. M. programmingtheiot.gda.connection.MqttClientConnector subscribeToTopic
+INFORMACIÓN: Suscrito exitosamente al tópico con oyente: PIOT/ConstrainedDevice/SystemPerfMsg
+may 30, 2025 9:35:57 A. M. programmingtheiot.gda.connection.MqttClientConnector publishMessage
+may 30, 2025 9:35:57 A. M. programmingtheiot.gda.connection.MqttClientConnector disconnectClient
+INFORMACIÓN: Disconnecting MQTT client from broker: tcp://localhost:1883
+may 30, 2025 9:35:57 A. M. programmingtheiot.part03.integration.connection.MqttClientPerformanceTest execTestPublish
+INFORMACIÓN: \n\tTesting Publish: QoS = 1 | msgs = 5000 | payload size = 212 | start = 1.74859046E9 | end = 1.74859046E9 | elapsed = 0.054
+
+
+testPublishQoS2
+
+may 30, 2025 9:39:40 A. M. programmingtheiot.gda.connection.MqttClientConnector initClientParameters
+INFORMACIÓN: Usando URL para conexión con el broker: tcp://localhost:1883
+may 30, 2025 9:39:40 A. M. programmingtheiot.gda.connection.MqttClientConnector connectClient
+INFORMACIÓN: Cliente MQTT conectándose al broker: tcp://localhost:1883
+may 30, 2025 9:39:40 A. M. programmingtheiot.gda.connection.MqttClientConnector connectComplete
+INFORMACIÓN: Conexión MQTT exitosa (es reconexión = false). Broker: tcp://localhost:1883
+may 30, 2025 9:39:40 A. M. programmingtheiot.gda.connection.MqttClientConnector subscribeToTopic
+INFORMACIÓN: Suscrito exitosamente al tópico con oyente: PIOT/ConstrainedDevice/ActuatorResponse
+may 30, 2025 9:39:40 A. M. programmingtheiot.gda.connection.MqttClientConnector subscribeToTopic
+INFORMACIÓN: Suscrito exitosamente al tópico con oyente: PIOT/ConstrainedDevice/SensorMsg
+may 30, 2025 9:39:40 A. M. programmingtheiot.gda.connection.MqttClientConnector subscribeToTopic
+INFORMACIÓN: Suscrito exitosamente al tópico con oyente: PIOT/ConstrainedDevice/SystemPerfMsg
+may 30, 2025 9:39:40 A. M. programmingtheiot.gda.connection.MqttClientConnector publishMessage
+may 30, 2025 9:39:40 A. M. programmingtheiot.gda.connection.MqttClientConnector disconnectClient
+INFORMACIÓN: Disconnecting MQTT client from broker: tcp://localhost:1883
+may 30, 2025 9:39:40 A. M. programmingtheiot.part03.integration.connection.MqttClientPerformanceTest execTestPublish
+INFORMACIÓN: \n\tTesting Publish: QoS = 2 | msgs = 5000 | payload size = 212 | start = 1.74859085E9 | end = 1.74859085E9 | elapsed = 0.097
+
+
 EOF.

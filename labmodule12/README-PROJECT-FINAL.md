@@ -7,6 +7,7 @@ NOTE: Be sure to implement all the Lab Module 12 requirements listed at Lab Modu
 
 Describe your idea in 1 paragraph (at least 2 or 3 sentences).
 
+Mi proyecto implementa un sistema de monitoreo ambiental y control de calidad del aire en interiores, utilizando un dispositivo restringido (CDA) para medir la temperatura, humedad y calidad del aire, y un dispositivo de pasarela (GDA) para agregar datos, tomar decisiones locales y conectarse a la nube. 
 
 
 ## What - The Problem 
@@ -31,7 +32,13 @@ Write 1 to 2 paragraphs describing the outcomes you achieved.
 Embed a block diagram depicting your overall design, including the CDA, GDA, and Cloud Services interactions.
 Be sure to include arrows depicting data flow from one application / service to the next.
 
+    CDA -> GDA: SensorData (Temp, Hum, AirQuality), SystemPerformanceData (vía MQTT/TLS)
 
+    GDA -> CDA: ActuatorData (Comando Purificador, Comando LED) (vía MQTT/TLS)
+
+    GDA -> Nube (Ubidots): SensorData (Temp, Hum, AirQuality del CDA), SystemPerformanceData (CDA y GDA) (vía MQTT/TLS)
+
+    Nube (Ubidots) -> GDA: ActuatorData (Comando LED) (vía MQTT/TLS))
 
 Write 1 to 2 paragraphs describing your design.
 
@@ -39,26 +46,25 @@ Write 1 to 2 paragraphs describing your design.
 
 ### What THREE (3) sensors and ONE (1) actuator did you use (add more if you wish)?
 
-- CDA Sensor 1: 
+    CDA Sensor 1: Temperature Sensor (Sensor de Temperatura)
 
-- CDA Sensor 2: 
+    CDA Sensor 2: Humidity Sensor (Sensor de Humedad)
 
-- CDA Sensor 3: 
+    CDA Sensor 3: Air Quality Sensor (Sensor de Calidad del Aire)
 
-- CDA Actuator 1: 
+    CDA Actuator 1: Air Purifier Actuator (Actuador Purificador de Aire) (Además del LED y el HVAC que ya estaban)
 
 
 
 ### What ONE (1) CDA protocol and TWO (2) GDA protocols did you implement (add more if you wish)?
 
-- CDA to GDA Protocol: 
+    CDA to GDA Protocol: MQTT (with TLS)
 
-- GDA to CDA Protocol: 
+    GDA to CDA Protocol: MQTT (with TLS)
 
-- GDA to Cloud Protocol: 
+    GDA to Cloud Protocol: MQTT (with TLS)
 
-- Cloud to GDA Protocol: 
-
+    Cloud to GDA Protocol: MQTT (with TLS)
 
  
 ### What TWO (2) cloud services / capabilities did you use (add more if you wish)?

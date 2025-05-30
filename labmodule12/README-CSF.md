@@ -10,8 +10,11 @@ NOTE: Include two full paragraphs describing your implementation approach by ans
 
 What does your implementation do? 
 
+Mi servicio en la nube (Ubidots STEM) es donde todos los datos de mis dispositivos IoT (CDA y GDA) terminan. Se conecta de forma segura al GDA para recibir y guardar datos de sensores como temperatura, humedad y calidad del aire, además del rendimiento de los dispositivos. Puedo ver toda esta información en gráficos en Ubidots. También he configurado Ubidots para que pueda enviar una orden para encender o apagar un LED en el CDA; esto lo hago desde un interruptor en el dashboard de Ubidots, demostrando control remoto desde la nube.
+
 How does your implementation work?
 
+Uso la plataforma Ubidots STEM sin escribir código para la nube. He creado un "Dispositivo" virtual para mi GDA y "Variables" para cada dato que quiero guardar. El GDA publica estos datos usando MQTT a los tópicos correctos de Ubidots (ej. /v1.6/devices/mi-gda/calidad-aire). Para controlar el LED, creé otra variable en Ubidots (comando-led) con un interruptor en el dashboard. 
 
 ### Code Documentation (only applies if you wrote CSF-specific code, otherwise, ignore)
 
